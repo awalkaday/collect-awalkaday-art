@@ -3,3 +3,9 @@ html {
   width: 100%;
 }
 
+.manifold-scheme-light
+.manifold {
+  --manifold-theme--color--primary: hsl(220deg 70% 50%);
+  --manifold-text--font-family--body: "Segoe UI", Helvetica, Arial, sans-serif;
+  --manifold-text--font-family--header: Alegreya, "Times New Roman", serif;
+}
