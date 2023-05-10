@@ -5,27 +5,40 @@
     <title>Collect Visual Artworks from the awalkaday.art Photography Collection</title>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="author" content="daqhris">
+  
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    
+    <!--Connect Widget: Add wallet authentication and blockchain functionality to your website.
+    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/connect-widget -->
+    <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js" ></script>
+    <link rel="stylesheet" href="https://connect.manifoldxyz.dev/2.2.4/connect.css" />
+    <link rel="stylesheet" href="https://connect.manifoldxyz.dev/2.2.4/connect.manifold-light.css" />
 
-    <script src="https://connect.manifoldxyz.dev/latest/connect.umd.min.js" ></script>
-    <link rel="stylesheet" href="https://connect.manifoldxyz.dev/latest/connect.css" />
-
-    <script src="https://identity.manifoldxyz.dev/latest/walletIdentity.umd.min.js" ></script>
-    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/latest//walletIdentity.css" />
-    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/latest//walletIdentity.manifold-light.css" />
-
+    <!--Wallet Identity Widget: Add a simple wallet profile with external links to your website. 
+    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/wallet-identity-widget -->
+    <script src="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.umd.min.js" ></script>
+    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0//walletIdentity.css" />
+    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0//walletIdentity.manifold-light.css" />
+    
+    <!--Restricted Token Widget: Add a display showing blocked marketplaces on a token address 
+    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/restricted-token-widget-->
     <script src="https://restrictedtoken.manifoldxyz.dev/latest/restrictedToken.umd.min.js" defer=""></script>
     <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/latest//walletIdentity.css" />
     <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/latest//walletIdentity.manifold-light.css" />
 
-    <script src="https://marketplace.manifoldxyz.dev/latest/marketplace.umd.min.js" defer=""></script>
-    <link rel="stylesheet" href="https://marketplace.manifoldxyz.dev/latest/marketplace.css" />
-    <link rel="stylesheet" href="https://marketplace.manifoldxyz.dev/latest/marketplace.manifold-light.css" />
+    <!--Marketplace Widgets: Add Manifold Gallery marketplace listings to your website.
+    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/marketplace-widgets -->
+    <script src="https://marketplace.manifoldxyz.dev/3.4.1/marketplace.umd.min.js" defer=""></script>
+    <link rel="stylesheet" href="https://marketplace.manifoldxyz.dev/3.4.1/marketplace.css" />
+    <link rel="stylesheet" href="https://marketplace.manifoldxyz.dev/3.4.1/marketplace.manifold-light.css" />
     
   </head>
   <body>
     <div
-      id="m-connect"
+      id="connect"
       data-widget="m-connect"
       data-app-name="nft.awalkaday.art"
       data-grant-type="signature"
@@ -34,19 +47,31 @@
       data-network="1"
     ></div>
     <div 
-      id="m-wallet-identity"
+      id="identity"
       data-widget="m-wallet-identity"
-      data-wallet="0xb5ee030c71e76C3E03B2A8d425dBb9B395037C82" 
-      ></div>
+      data-wallet=0xb5ee030c71e76C3E03B2A8d425dBb9B395037C82
+      class="manifold-scheme-light"
+    ></div>
     <div
+      id="restricted-token"
+      data-widget="m-restricted-token"
+      data-wallet=0xE31801C2E58b151C3deD2cB29dA56147b7f27eB1
+    ></div>
+    <div
+      id="marketplace"
       data-widget="m-layout-complete-listing"
       data-id="5136"
       data-network="1"
+      data-version="2"
+      data-fallback-provider="wss://mainnet.infura.io/ws/v3/f2d84def4dd24098b09cc6c9db5fd0ee"
     ></div>
     <div
+      id="lmarketplace"
       data-widget="m-layout-complete-listing"
       data-id="5137"
       data-network="1"
+      data-version="2"
+      data-fallback-provider="wss://mainnet.infura.io/ws/v3/f2d84def4dd24098b09cc6c9db5fd0ee"
     ></div>
   </body>
   <style>
