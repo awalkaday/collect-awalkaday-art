@@ -3,30 +3,33 @@
   
   <head>
     <title>Collect Visual Artworks from the awalkaday.art Photography Collection</title>
-    
+
+    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="author" content="daqhris">
-  
+    <meta name="author" content="Chris-Armel (daqhris)">
     <meta content="yes" name="mobile-web-app-capable">
     <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta content="noindex,nofollow" name="robots">
+    <meta name="Content-Security-Policy" content="default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'">
     
     <!--Connect Widget: Add wallet authentication and blockchain functionality to your website.
     https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/connect-widget -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.9.0/web3.min.js"></script>
 <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js" ></script>
     <link rel="stylesheet" href="https://connect.manifoldxyz.dev/2.2.4/connect.css" />
     <link rel="stylesheet" href="https://connect.manifoldxyz.dev/2.2.4/connect.manifold-light.css" />
 
     <!--Wallet Identity Widget: Add a simple wallet profile with external links to your website. 
     https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/wallet-identity-widget -->
-    <script src="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.umd.min.js" ></script>
+    <script src="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.umd.min.js" defer=""></script>
     <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0//walletIdentity.css" />
     <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0//walletIdentity.manifold-light.css" />
     
     <!--Restricted Token Widget: Add a display showing blocked marketplaces on a token address 
     https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/restricted-token-widget-->
-    <script src="https://restrictedtoken.manifoldxyz.dev/latest/restrictedToken.umd.min.js" defer=""></script>
+    <script src="https://restrictedtoken.manifoldxyz.dev/latest/restrictedToken.umd.min.js" ></script>
     <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/latest//walletIdentity.css" />
     <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/latest//walletIdentity.manifold-light.css" />
 
