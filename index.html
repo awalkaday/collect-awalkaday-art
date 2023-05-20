@@ -2,7 +2,7 @@
 <html lang="en" class="manifold-scheme-light">
   
   <head>
-    <title>Collect Visual Artworks from the awalkaday.art Photography Collection</title>
+    <title>Collect visual artworks from the awalkaday.art Photography Collection</title>
 
     <!--Meta tags-->
     <meta charset="UTF-8">
@@ -12,8 +12,14 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta content="noindex,nofollow" name="robots">
+    <meta content="en_US" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="https://collect.awalkaday.art" property="og:url">
     <meta name="Content-Security-Policy" content="default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'">
+    <meta name="theme-color" content="#FFFFFF"/>
+    <link href="https://awalkaday.art/assets/icons/awalkaday-logo-1x1.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://awalkaday.art/assets/icons/awalkaday-logo-1x1.png" rel="shortcut icon">
+    <link href="https://awalkaday.art/assets/icons/awalkaday-logo-1x1.png" rel="apple-touch-icon">
     
     <!--Connect Widget: Add wallet authentication and blockchain functionality to your website.
     https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/connect-widget -->
@@ -24,14 +30,13 @@
     <!--Wallet Identity Widget: Add a simple wallet profile with external links to your website. 
     https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/wallet-identity-widget -->
     <script src="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.umd.min.js" defer=""></script>
-    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0//walletIdentity.css" />
-    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0//walletIdentity.manifold-light.css" />
+    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.css" />
+    <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.manifold-light.css" />
     
     <!--Restricted Token Widget: Add a display showing blocked marketplaces on a token address 
     https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/restricted-token-widget-->
     <script src="https://restrictedtoken.manifoldxyz.dev/latest/restrictedToken.umd.min.js" ></script>
-    <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/latest//walletIdentity.css" />
-    <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/latest//walletIdentity.manifold-light.css" />
+    <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/0.1.0/restrictedToken.css" />
 
     <!--Marketplace Widgets: Add Manifold Gallery marketplace listings to your website.
     https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/marketplace-widgets -->
@@ -94,10 +99,16 @@
   </body>
   <style>
     #connect {
-      margin: 10px 0;
+      margin: 0px 0px 60px 0px;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: right;
+    }
+    #identity {
+      margin: 10px 10px 60px 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
     }
   </style>
 </html>
