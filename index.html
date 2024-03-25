@@ -43,29 +43,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!--Connect Widget: Add wallet authentication and blockchain functionality.
-    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/connect-widget -->
-  <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js"></script>
-  <link rel="stylesheet" href="https://connect.manifoldxyz.dev/2.2.4/connect.css" />
-  <link rel="stylesheet" href="https://connect.manifoldxyz.dev/2.2.4/connect.manifold-light.css" />
-
-  <!--Wallet Identity Widget: Add a simple wallet profile with external links. 
-    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/wallet-identity-widget -->
-  <script src="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.umd.min.js" defer=""></script>
-  <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.css" />
-  <link rel="stylesheet" href="https://identity.manifoldxyz.dev/2.1.0/walletIdentity.manifold-light.css" />
-
-  <!--Restricted Token Widget: Add a display showing blocked marketplaces on a token address 
-    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/restricted-token-widget-->
-  <script src="https://restrictedtoken.manifoldxyz.dev/latest/restrictedToken.umd.min.js"></script>
-  <link rel="stylesheet" href="https://restrictedtoken.manifoldxyz.dev/0.1.0/restrictedToken.css" />
-
-  <!--Marketplace Widgets: Add Manifold Gallery marketplace listings.
-    https://docs.manifold.xyz/v/manifold-for-developers/resources/widgets/marketplace-widgets -->
-  <script src="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.umd.min.js" defer=""></script>
-  <link rel="stylesheet" href="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.css" />
-  <link rel="stylesheet" href="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.manifold-light.css" />
-
 </head>
 <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
 
@@ -132,10 +109,6 @@
         </svg>
       </a>
 
-
-
-      </a>
-
       <!--Coinbase NFT Maketplace-->
       <a class="button btn btn-primary btn-block btn-outline-light" role="button"
         href="https://nft.coinbase.com/collection/awalkaday-art?saleType=buyNow" title="awalkaday.art | Coinbase NFT"
@@ -173,44 +146,6 @@
     </div>
   </nav>
 
-<!--
-
-  <!-- Manifold Studio Widgets -->
-  <div id="connect" data-widget="m-connect" data-grant-type="signature"
-    data-client-id=7e3035788eb343341cf71b9ea1772c6769dc795303db62e43bfc617626c6d892
-    data-app-name='The awalkaday.art Collector Shop' data-network="1"></div>
-
-  <!--Creator On-chain Identity-->
-  <div id="identity" data-widget="m-wallet-identity" data-grant-type="signature"
-    data-client-id="ffa91be6c6c5d78e8b5bbed645da925fb0a7077576eca5cdc242347a5b0903ca"
-    data-wallet=0xb5ee030c71e76C3E03B2A8d425dBb9B395037C82 data-app-name='Collection Creator: Chris-Armel | daqhris.eth'
-    data-network="1" class="manifold-scheme-light"></div>
-
-  <div id="restricted-token" data-widget="m-restricted-token" data-grant-type="signature"
-    data-client-id="2d2f2ab6dffa670de482fff36b61f19daa8284df369242d3c791bc7a6ba6560a"
-    data-app-name='Creator Profile on Other Digital Art Marketplaces' data-network="1"
-    data-wallet=0xE31801C2E58b151C3deD2cB29dA56147b7f27eB1></div>
-
-  <!--PHOTO: awalkaday 251-2022-->
-  <div id="marketplace" data-widget="m-layout-complete-listing" data-grant-type="signature"
-    data-client-id="0a707228a45620e6101b391edc0088f3dcbac207e8d4c9bdcb2aa544387a9e23"
-    data-app-name='Artwork For Sale: awalkaday 251-2022' data-network="1" data-id="6521" data-version="2"
-    data-fallback-provider="wss://mainnet.infura.io/ws/v3/f2d84def4dd24098b09cc6c9db5fd0ee"></div>
-
-  <!--PHOTO: awalkaday 253-2022-->
-  <div id="marketplace" data-widget="m-layout-complete-listing" data-grant-type="signature"
-    data-client-id="423de780aadfe1a6a170c10746da307a0c020dd9c5f9b9af3ba3082f50e9276c"
-    data-app-name='Artwork For Sale: awalkaday 253-2022' data-network="1" data-id="6519" data-network="1"
-    data-version="2" data-fallback-provider="wss://mainnet.infura.io/ws/v3/f2d84def4dd24098b09cc6c9db5fd0ee"></div>
-
-  <!--PHOTO: awalkaday 71-2022-->
-  <div id="marketplace" data-widget="m-layout-complete-listing" data-grant-type="signature"
-    data-client-id="0a707228a45620e6101b391edc0088f3dcbac207e8d4c9bdcb2aa544387a9e23"
-    data-app-name='Artwork For Sale: awalkaday 71-2022' data-network="1" data-id="6522" data-network="1"
-    data-version="2" data-fallback-provider="wss://mainnet.infura.io/ws/v3/f2d84def4dd24098b09cc6c9db5fd0ee"></div>
-
--->
-
   <!--Credits and Affiliation-->
   <nav style="background:lightgray;
       border: solid 3px #36383c;
@@ -233,7 +168,7 @@
         </svg>
       </a>
     </div>
-    <div><small>Verify the source code on <a href="https://github.com/awalkaday/collect-awalkaday-art"
+    <div><small>Check the code of this site on <a href="https://github.com/awalkaday/collect-awalkaday-art"
           target="_blank">GitHub.com</a></small></div>
   </nav>
 
